@@ -9,15 +9,22 @@
     a { color:#002144; text-decoration:none; }
     .container { max-width:600px; margin:0 auto; padding: 0 10px; }
     .center { text-align:center; }
+    .left { text-align:left; }
     .spacer-10 { height:10px; }
+    .spacer-15 { height:15px; }
     .spacer-20 { height:20px; }
     .spacer-25 { height:25px; }
     .spacer-30 { height:30px; }
     .spacer-40 { height:40px; }
     .btn { display:inline-block; padding:10px 15px; background:#002144; color:#fff; font-size:12px; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
+    .grid2 { display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
     .logo { width:150px; }
     footer { background:#fbf9f9; padding:40px 20px; font-size:9px; line-height:1.4; }
+    .intro { line-height:1.6; font-size:14px; }
+    .product-row { display:grid; grid-template-columns: 138px 1fr 140px; align-items:center; gap:10px; }
+    .price-old { text-decoration: line-through; font-size:12px; }
+    .price-new { font-size:14px; }
+    .cta-wrap { text-align:right; }
   </style>
 </head>
 <body>
@@ -29,27 +36,53 @@
   </div>
   <div class="spacer-25"></div>
   <div class="center"><strong>Hi there,</strong></div>
-  <div class="spacer-25"></div>
-  <div class="center">
-    <img src="https://image.gazman.com.au/custloads/794115570/md_872134.jpg" width="600" alt="">
+
+  <div class="spacer-20"></div>
+  <div class="center intro">
+    <div>Some of our products have just dropped in price.</div>
+    <div>We thought you should be the first to know!</div>
+    <div>Get in quick as prices are subject to change.</div>
   </div>
-  <div class="spacer-30"></div>
-  <div class="center" style="font-weight:bold;">STYLES AVAILABLE ONLINE YOU MIGHT LIKE</div>
+
+  <!-- Middle product row -->
   <div class="spacer-25"></div>
-  <div class="grid">
+  <div class="product-row">
+    <div class="left">
+      <img src="http://link.gazman.com.au/predict/recommender/14759E2E99D49431/rbty7r/1.jpg?eh={{contact.17077}}&es={{contact.17078}}" width="138" alt="Product image" style="display:block;">
+    </div>
+    <div class="left">
+      <div style="font-weight:bold;">Title</div>
+      <div class="spacer-10"></div>
+      <div class="price-old">XXX.XX</div>
+      <div class="spacer-5"></div>
+      <div class="price-new">XXX.XX</div>
+    </div>
+    <div class="cta-wrap">
+      <a class="btn" href="https://www.gazman.com.au/" target="_blank" rel="noopener">Buy now</a>
+    </div>
+  </div>
+
+  <div class="spacer-30"></div>
+
+  <!-- Styles available section -->
+  <div class="center" style="font-weight:bold; letter-spacing:1px;">STYLES AVAILABLE ONLINE YOU MIGHT LIKE</div>
+  <div class="spacer-25"></div>
+  <div class="grid2">
     <div class="center">
       <img src="http://link.gazman.com.au/predict/recommender/14759E2E99D49431/rbty7r/1.jpg?eh={{contact.17077}}&es={{contact.17078}}" width="290" alt="STRETCH CORD PANT">
       <div class="spacer-10"></div>
-      <div>STRETCH CORD PANT</div>
+      <div style="font-size:12px; font-weight:bold;">STRETCH CORD PANT</div>
     </div>
     <div class="center">
       <img src="http://link.gazman.com.au/predict/recommender/14759E2E99D49431/rbty7r/2.jpg?eh={{contact.17077}}&es={{contact.17078}}" width="290" alt="PURE FRENCH LINEN">
       <div class="spacer-10"></div>
-      <div>PURE FRENCH LINEN</div>
+      <div style="font-size:12px; font-weight:bold;">PURE FRENCH LINEN</div>
     </div>
   </div>
+
   <div class="spacer-40"></div>
 </div>
+
 <footer>
   <div class="center"><img src="https://suite34.emarsys.net/custloads/794115570/logo2.png" class="logo" alt="GAZMAN"></div>
   <div class="spacer-20"></div>
